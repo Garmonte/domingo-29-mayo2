@@ -2,14 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import {BrowserRouter, Route, Routes } from 'react-router-dom'
 import './index.css'
+import Home from './componentes/Home'
+import Clientes from './componentes/Clientes'
+import Productos from './componentes/Productos'
+import Facturas from './componentes/Facturas'
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={ <Home></Home> } />
-      <Route path="/facturas" component={ <Facturas></Facturas> } />
-      <Route path="/clientes" component={ <Clientes></Clientes> } /> 
-      <Route path="/productos" component={ <Productos></Productos> } />
+      <Route path="/facturas" element={ <Facturas></Facturas> } />
+      <Route path="/clientes" element={ <Clientes></Clientes> } /> 
+      <Route path="/productos" element={ <Productos></Productos> } />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
