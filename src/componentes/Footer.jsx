@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className='d-flex justify-content-around mb-5'>
+  <footer className='d-flex justify-content-around mb-5'>
     <div className='d-flex flex-column'>
       <Link to="/personas">Facebook</Link>
       <Link to="/personas">Instagram</Link>
