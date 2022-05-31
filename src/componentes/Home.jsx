@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from 'react-router-dom'
+import {Link, Outlet} from 'react-router-dom'
 export default function Home() {
   return (
-    <div className="d-flex flex-column justify-content-between container fullscreen">
+    <div className="d-flex flex-column container fullscreen">
       <header>
         <ul>
           <li><Link to="/clientes">Clientes</Link></li>
@@ -11,7 +11,7 @@ export default function Home() {
         </ul>
       </header>
       <main className='flex-grow-1'>
-        principal
+        <Outlet />
       </main>
       <footer>pie</footer>
     </div>
