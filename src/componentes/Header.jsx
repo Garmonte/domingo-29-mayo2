@@ -1,13 +1,15 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
-export default function Header() {
+
+function Header() {
   return (
     <header>
-        <ul>
-            <li><Link to="/clientes">Clientes</Link></li>
-            <li><Link to="/productos">Productos</Link></li>
-            <li><Link to="/facturas">Facturas</Link></li>
+        <ul className='list-group list-group-horizontal'>
+            <li className='list-group-item'><Link to="/clientes">Clientes</Link></li>
+            <li className='list-group-item'><Link to="/productos">Productos</Link></li>
+            <li className='list-group-item'><Link to="/facturas">Facturas</Link></li>
         </ul>
     </header>
   )
 }
+export default Header

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-export default function Footer() {
+function Footer() {
   return (
   <footer className='d-flex justify-content-around mb-5'>
     <div className='d-flex flex-column'>
@@ -17,3 +17,4 @@ export default function Footer() {
   </footer>
   )
 }
+export default Footer
